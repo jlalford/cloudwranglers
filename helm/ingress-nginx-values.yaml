@@ -1,0 +1,10 @@
+controller:
+  hostNetwork: true
+  service:
+    type: NodePort
+    httpPort:
+      enabled: true
+      port: 80
+    httpsPort:
+      enabled: true
+      port: 443 
