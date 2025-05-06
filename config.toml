@@ -1,1 +1,8 @@
-theme = "ananke"
+theme = "hugo-creative-portfolio-theme"
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+
+[params]
+name = "Cloud Wranglers"
+description = "Cloud infrastructure experts. OpenStack, Linux, networking, and distributed systems."
+email = "hello@cloudwranglers.io"

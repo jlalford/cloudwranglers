@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud Wranglers - Expert Cloud Infrastructure Solutions on Welcome to Cloud Wranglers</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Cloud Wranglers - Expert Cloud Infrastructure Solutions on Welcome to Cloud Wranglers</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 May 2025 23:51:24 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>http://localhost:1313/posts/first/</link>
+      <pubDate>Mon, 05 May 2025 23:51:24 -0700</pubDate>
+      <guid>http://localhost:1313/posts/first/</guid>
+      <description>&lt;p&gt;Test test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Cloud Wranglers</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h1 id=&#34;about-cloud-wranglers&#34;&gt;About Cloud Wranglers&lt;/h1&gt;&#xA;&lt;h2 id=&#34;our-mission&#34;&gt;Our Mission&lt;/h2&gt;&#xA;&lt;p&gt;At Cloud Wranglers, we&amp;rsquo;re dedicated to helping businesses harness the power of cloud infrastructure through expert consulting and implementation services. Our mission is to provide reliable, scalable, and efficient cloud solutions that drive business growth and innovation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;our-story&#34;&gt;Our Story&lt;/h2&gt;&#xA;&lt;p&gt;Founded by industry veterans with decades of combined experience in cloud infrastructure, Cloud Wranglers emerged from a shared vision: to make enterprise-grade cloud solutions accessible and manageable for businesses of all sizes. We combine deep technical expertise with practical business acumen to deliver solutions that work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact Cloud Wranglers</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;contact-us&#34;&gt;Contact Us&lt;/h1&gt;&#xA;&lt;p&gt;Ready to transform your cloud infrastructure? We&amp;rsquo;re here to help.&lt;/p&gt;&#xA;&lt;h2 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Email&lt;/strong&gt;: &lt;a href=&#34;mailto:info@cloudwranglers.io&#34;&gt;info@cloudwranglers.io&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Phone&lt;/strong&gt;: &lt;a href=&#34;tel:+14802341417&#34;&gt;480-234-1417&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Office Hours&lt;/strong&gt;: Monday - Friday, 9:00 AM - 5:00 PM MST&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Location&lt;/strong&gt;: Phoenix, Arizona 85021&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;send-us-a-message&#34;&gt;Send Us a Message&lt;/h2&gt;&#xA;&lt;form action=&#34;https://formspree.io/f/info@cloudwranglers.io&#34; method=&#34;POST&#34;&gt;&#xA;  &lt;div class=&#34;form-group&#34;&gt;&#xA;    &lt;label for=&#34;name&#34;&gt;Name&lt;/label&gt;&#xA;    &lt;input type=&#34;text&#34; id=&#34;name&#34; name=&#34;name&#34; required&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;form-group&#34;&gt;&#xA;    &lt;label for=&#34;email&#34;&gt;Email&lt;/label&gt;&#xA;    &lt;input type=&#34;email&#34; id=&#34;email&#34; name=&#34;email&#34; required&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;form-group&#34;&gt;&#xA;    &lt;label for=&#34;company&#34;&gt;Company&lt;/label&gt;&#xA;    &lt;input type=&#34;text&#34; id=&#34;company&#34; name=&#34;company&#34;&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;form-group&#34;&gt;&#xA;    &lt;label for=&#34;message&#34;&gt;Message&lt;/label&gt;&#xA;    &lt;textarea id=&#34;message&#34; name=&#34;message&#34; rows=&#34;5&#34; required&gt;&lt;/textarea&gt;&#xA;  &lt;/div&gt;&#xA;&lt;p&gt;&lt;button type=&#34;submit&#34; class=&#34;btn btn-primary&#34;&gt;Send Message&lt;/button&gt;&lt;/p&gt;&#xA;&lt;/form&gt;&#xA;&lt;h2 id=&#34;schedule-a-consultation&#34;&gt;Schedule a Consultation&lt;/h2&gt;&#xA;&lt;p&gt;Looking to discuss your cloud infrastructure needs? &lt;a href=&#34;http://localhost:1313/calendar&#34;&gt;Schedule a meeting&lt;/a&gt; with our team.&lt;/p&gt;&#xA;&lt;h2 id=&#34;office-location&#34;&gt;Office Location&lt;/h2&gt;&#xA;&lt;p&gt;Phoenix, Arizona 85021&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Schedule a Consultation</title>
+      <link>http://localhost:1313/calendar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/calendar/</guid>
+      <description>&lt;h1 id=&#34;schedule-a-meeting&#34;&gt;Schedule a Meeting&lt;/h1&gt;&#xA;&lt;p&gt;Book a consultation with our cloud infrastructure experts to discuss your needs.&lt;/p&gt;&#xA;&lt;h2 id=&#34;meeting-types&#34;&gt;Meeting Types&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Initial Consultation&lt;/strong&gt; (30 minutes)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Overview of your infrastructure needs&lt;/li&gt;&#xA;&lt;li&gt;Initial assessment and recommendations&lt;/li&gt;&#xA;&lt;li&gt;High-level planning discussion&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Technical Deep Dive&lt;/strong&gt; (60 minutes)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Detailed technical requirements&lt;/li&gt;&#xA;&lt;li&gt;Architecture design review&lt;/li&gt;&#xA;&lt;li&gt;Implementation planning&lt;/li&gt;&#xA;&lt;li&gt;Performance optimization strategies&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Project Planning&lt;/strong&gt; (60 minutes)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Project scope definition&lt;/li&gt;&#xA;&lt;li&gt;Timeline and milestone planning&lt;/li&gt;&#xA;&lt;li&gt;Resource allocation&lt;/li&gt;&#xA;&lt;li&gt;Risk assessment&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Emergency Support&lt;/strong&gt; (60 minutes)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Critical infrastructure issues&lt;/li&gt;&#xA;&lt;li&gt;Immediate technical assistance&lt;/li&gt;&#xA;&lt;li&gt;Quick resolution planning&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;schedule-your-meeting&#34;&gt;Schedule Your Meeting&lt;/h2&gt;&#xA;&lt;div class=&#34;calendly-container&#34;&gt;&#xA;    &lt;div class=&#34;calendly-inline-widget&#34; data-url=&#34;https://calendly.com/jalford00&#34; style=&#34;min-width:320px;height:700px;&#34;&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;script type=&#34;text/javascript&#34; src=&#34;https://assets.calendly.com/assets/external/widget.js&#34; async&gt;&lt;/script&gt;&#xA;&lt;h2 id=&#34;scheduling-process&#34;&gt;Scheduling Process&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Select your preferred meeting type&lt;/li&gt;&#xA;&lt;li&gt;Choose an available time slot&lt;/li&gt;&#xA;&lt;li&gt;Provide your contact information&lt;/li&gt;&#xA;&lt;li&gt;Receive confirmation and meeting details&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;All meetings are conducted via video conference, and meeting links will be sent via email upon confirmation.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

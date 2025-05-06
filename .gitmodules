@@ -1,3 +1,9 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke
+[submodule "themes/tella"]
+	path = themes/tella
+	url = https://github.com/opera7133/tella
+[submodule "themes/hugo-creative-portfolio-theme"]
+	path = themes/hugo-creative-portfolio-theme
+	url = https://github.com/kishaningithub/hugo-creative-portfolio-theme.git
