@@ -48,4 +48,11 @@ Selector labels
 {{- define "cloudwranglers.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "cloudwranglers.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+{{- end }}
+
+{{/*
+Get the namespace
+*/}}
+{{- define "cloudwranglers.namespace" -}}
+{{- .Values.namespace | default "cloudwranglers-site" }}
 {{- end }} 
