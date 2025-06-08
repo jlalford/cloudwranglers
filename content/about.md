@@ -1,6 +1,7 @@
 ---
 title: "About Cloud Wranglers"
 description: "Learn about our team, mission, and expertise in cloud infrastructure solutions"
+layout: "about"
 draft: false
 ---
 

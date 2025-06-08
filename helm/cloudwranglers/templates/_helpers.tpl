@@ -51,6 +51,17 @@ app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
+Create the name of the service account to use
+*/}}
+{{- define "cloudwranglers.serviceAccountName" -}}
+{{- if .Values.serviceAccount.create }}
+{{- default (include "cloudwranglers.fullname" .) .Values.serviceAccount.name }}
+{{- else }}
+{{- default "default" .Values.serviceAccount.name }}
+{{- end }}
+{{- end }}
+
+{{/*
 Get the namespace
 */}}
 {{- define "cloudwranglers.namespace" -}}

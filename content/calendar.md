@@ -1,51 +1,53 @@
 ---
 title: "Schedule a Consultation"
-description: "Book a meeting with our cloud infrastructure experts"
+description: "Book a meeting with our cloud infrastructure experts to discuss your needs"
+layout: "calendar"
 draft: false
 ---
 
-# Schedule a Meeting
+<!-- This content is rendered by the calendar layout template -->
 
-Book a consultation with our cloud infrastructure experts to discuss your needs.
+## About Our Consultation Services
 
-## Meeting Types
+We offer several types of consultations to meet your specific cloud infrastructure needs:
 
-- **Initial Consultation** (30 minutes)
-  - Overview of your infrastructure needs
-  - Initial assessment and recommendations
-  - High-level planning discussion
+### **Initial Consultation (30 minutes)**
+Perfect for getting started and understanding your infrastructure needs. This complimentary session includes:
+- Overview of your current infrastructure
+- Initial assessment and recommendations  
+- High-level planning discussion
+- Next steps and potential solutions
 
-- **Technical Deep Dive** (60 minutes)
-  - Detailed technical requirements
-  - Architecture design review
-  - Implementation planning
-  - Performance optimization strategies
+### **Technical Deep Dive (60 minutes)**
+For detailed technical discussions about your infrastructure requirements:
+- Detailed technical requirements analysis
+- Architecture design review
+- Implementation planning and strategies
+- Performance optimization recommendations
 
-- **Project Planning** (60 minutes)
-  - Project scope definition
-  - Timeline and milestone planning
-  - Resource allocation
-  - Risk assessment
+### **Project Planning (60 minutes)**  
+Comprehensive project planning and scoping session:
+- Project scope definition and requirements
+- Timeline and milestone planning
+- Resource allocation and budgeting
+- Risk assessment and mitigation strategies
 
-- **Emergency Support** (60 minutes)
-  - Critical infrastructure issues
-  - Immediate technical assistance
-  - Quick resolution planning
+### **Emergency Support (60 minutes)**
+Immediate assistance for critical infrastructure issues:
+- Critical infrastructure problem resolution
+- Immediate technical assistance and guidance
+- Quick resolution planning and implementation
+- Emergency escalation procedures
 
-## Schedule Your Meeting
+## How It Works
 
-<div class="calendly-container">
-    <div class="calendly-inline-widget" data-url="https://calendly.com/jalford00" style="min-width:320px;height:700px;"></div>
-</div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+1. **Select** your preferred meeting type from the options above
+2. **Choose** an available time slot that works for your schedule  
+3. **Provide** your contact information and project details
+4. **Receive** confirmation and meeting details via email
 
-## Scheduling Process
+All meetings are conducted via secure video conference. Meeting links and dial-in information will be provided upon confirmation.
 
-1. Select your preferred meeting type
-2. Choose an available time slot
-3. Provide your contact information
-4. Receive confirmation and meeting details
+## Questions?
 
-All meetings are conducted via video conference, and meeting links will be sent via email upon confirmation.
-
-If you need to reschedule or have any questions, please [contact us](/contact). 
+If you need to reschedule or have any questions about our consultation services, please [contact us directly](/contact) or email us at info@cloudwranglers.io. 
