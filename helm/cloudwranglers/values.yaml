@@ -41,7 +41,7 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
 
 certManager:
-  email: info@cloudwranglers.io
+  email: hello@cloudwranglers.io
   staging: false
 
 resources:
