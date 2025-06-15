@@ -7,4 +7,4 @@ controller:
       port: 80
     httpsPort:
       enabled: true
-      port: 443 
+      port: 443
