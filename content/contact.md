@@ -11,14 +11,14 @@ Ready to transform your cloud infrastructure? We're here to help.
 
 ## Get in Touch
 
-- **Email**: [info@cloudwranglers.io](mailto:info@cloudwranglers.io)
+- **Email**: [hello@cloudwranglers.io](mailto:hello@cloudwranglers.io)
 - **Phone**: [480-234-1417](tel:+14802341417)
 - **Office Hours**: Monday - Friday, 9:00 AM - 5:00 PM MST
 - **Location**: Phoenix, Arizona 85021
 
 ## Send Us a Message
 
-<form action="https://formspree.io/f/info@cloudwranglers.io" method="POST">
+<form action="https://formspree.io/f/hello@cloudwranglers.io" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>

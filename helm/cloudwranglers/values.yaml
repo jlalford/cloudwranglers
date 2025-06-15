@@ -100,8 +100,8 @@ ingress:
     nginx.ingress.kubernetes.io/rate-limit-window: "1m"
 
 certManager:
+  email: hello@cloudwranglers.io
   enabled: true
-  email: info@cloudwranglers.io
   staging: false
 
 resources:
