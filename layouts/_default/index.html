@@ -1,95 +1,242 @@
 {{ define "main" }}
-    <section class="hero">
-        <div class="section-content">
-            <h1>Cloud Infrastructure Expertise</h1>
-            <p>Specialized consulting services for enterprise-grade cloud infrastructure solutions</p>
+    <section class="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                    Cloud Infrastructure <span class="text-primary-200">Expertise</span>
+                </h1>
+                <p class="text-xl lg:text-2xl text-primary-100 mb-8 max-w-3xl mx-auto">
+                    Specialized consulting services for enterprise-grade cloud infrastructure solutions
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="/contact" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-gray-50 transition-colors">
+                        Get Started
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="/about" class="inline-flex items-center px-8 py-3 border-2 border-white text-base font-medium rounded-md text-white hover:bg-white hover:text-primary-700 transition-colors">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" class="w-full h-12 fill-current text-white">
+                <path d="M0,64L1440,32L1440,120L0,120Z"></path>
+            </svg>
         </div>
     </section>
 
-    <section class="section">
-        <div class="section-content">
-            <h2>Our Expertise</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3>Linux & OpenStack</h3>
-                    <ul>
-                        <li>Enterprise Linux deployments</li>
-                        <li>OpenStack architecture & implementation</li>
-                        <li>Cloud platform optimization</li>
-                        <li>System automation & orchestration</li>
+    <section class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Our Expertise</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive cloud infrastructure solutions tailored to your enterprise needs
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fab fa-linux text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Linux & OpenStack</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Enterprise Linux deployments
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            OpenStack architecture & implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Cloud platform optimization
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            System automation & orchestration
+                        </li>
                     </ul>
                 </div>
 
-                <div class="expertise-card">
-                    <h3>Virtualization</h3>
-                    <ul>
-                        <li>KVM/QEMU implementation</li>
-                        <li>libvirt management</li>
-                        <li>VMware solutions</li>
-                        <li>Container orchestration</li>
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Virtualization</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            KVM/QEMU implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            libvirt management
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            VMware solutions
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Container orchestration
+                        </li>
                     </ul>
                 </div>
 
-                <div class="expertise-card">
-                    <h3>Storage Solutions</h3>
-                    <ul>
-                        <li>Ceph storage architecture</li>
-                        <li>SAN/NAS implementation</li>
-                        <li>High-performance storage</li>
-                        <li>Data management & optimization</li>
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Storage Solutions</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Ceph storage architecture
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            SAN/NAS implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            High-performance storage
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Data management & optimization
+                        </li>
                     </ul>
                 </div>
 
-                <div class="expertise-card">
-                    <h3>Networking</h3>
-                    <ul>
-                        <li>High-performance networking</li>
-                        <li>Network architecture design</li>
-                        <li>Security implementation</li>
-                        <li>Load balancing & optimization</li>
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-network-wired text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Networking</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            High-performance networking
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Network architecture design
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Security implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Load balancing & optimization
+                        </li>
                     </ul>
                 </div>
 
-                <div class="expertise-card">
-                    <h3>Security</h3>
-                    <ul>
-                        <li>Infrastructure security</li>
-                        <li>Access control implementation</li>
-                        <li>Security best practices</li>
-                        <li>Compliance & auditing</li>
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Security</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Infrastructure security
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Access control implementation
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Security best practices
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Compliance & auditing
+                        </li>
                     </ul>
                 </div>
 
-                <div class="expertise-card">
-                    <h3>Consulting Services</h3>
-                    <ul>
-                        <li>Architecture design & review</li>
-                        <li>Implementation support</li>
-                        <li>Performance optimization</li>
-                        <li>Training & knowledge transfer</li>
+                <div class="group bg-white rounded-xl shadow-lg border border-gray-100 p-8 hover:shadow-xl hover:border-primary-200 transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-2xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Consulting Services</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Architecture design & review
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Implementation support
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Performance optimization
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-primary-500 mt-1 mr-3 flex-shrink-0"></i>
+                            Training & knowledge transfer
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <div class="section-content">
-            <h2>Why Choose Us?</h2>
-            <div class="expertise-grid">
-                <div class="expertise-card">
-                    <h3>Deep Technical Expertise</h3>
-                    <p>Years of hands-on experience with enterprise infrastructure solutions</p>
+    <section class="py-16 lg:py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Why Choose Us?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Experience the difference of working with specialized cloud infrastructure experts
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-3xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Deep Technical Expertise</h3>
+                    <p class="text-gray-600">Years of hands-on experience with enterprise infrastructure solutions across diverse environments and technologies.</p>
                 </div>
-                <div class="expertise-card">
-                    <h3>Focused Approach</h3>
-                    <p>Direct access to senior-level expertise without the overhead of a large consulting firm</p>
+                
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-3xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Focused Approach</h3>
+                    <p class="text-gray-600">Direct access to senior-level expertise without the overhead of a large consulting firm. Personal attention to your unique needs.</p>
                 </div>
-                <div class="expertise-card">
-                    <h3>Proven Solutions</h3>
-                    <p>Real-world implementations across various industries and use cases</p>
+                
+                <div class="text-center p-8">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-3xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-4">Proven Solutions</h3>
+                    <p class="text-gray-600">Real-world implementations across various industries and use cases. Track record of successful deployments and optimizations.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-primary-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-6">Ready to Transform Your Infrastructure?</h2>
+            <p class="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
+                Let's discuss how we can help optimize your cloud infrastructure and accelerate your business goals.
+            </p>
+            <a href="/contact" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-gray-50 transition-colors">
+                Schedule a Consultation
+                <i class="fas fa-calendar ml-2"></i>
+            </a>
         </div>
     </section>
 {{ end }} 

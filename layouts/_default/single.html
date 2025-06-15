@@ -1,6 +1,587 @@
 {{ define "main" }}
-    <article>
-        <h1>{{ .Title }}</h1>
-        {{ .Content }}
-    </article>
+    {{ if eq .Params.layout "about" }}
+        <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{{ .Title }}</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ .Params.description }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
+                        <p class="text-lg text-gray-600 mb-6">At Cloud Wranglers, we're dedicated to helping businesses harness the power of cloud infrastructure through expert consulting and implementation services.</p>
+                        <p class="text-lg text-gray-600">Our mission is to provide reliable, scalable, and efficient cloud solutions that drive business growth and innovation.</p>
+                    </div>
+                    <div class="bg-primary-50 rounded-lg p-8">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-cloud text-3xl text-primary-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold text-center text-gray-900 mb-4">Enterprise-Grade Solutions</h3>
+                        <p class="text-gray-600 text-center">Proven infrastructure solutions designed for scale and reliability</p>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Story</h2>
+                    <div class="bg-gray-50 rounded-lg p-8">
+                        <p class="text-lg text-gray-600 mb-4">Founded by industry veterans with decades of combined experience in cloud infrastructure, Cloud Wranglers emerged from a shared vision: to make enterprise-grade cloud solutions accessible and manageable for businesses of all sizes.</p>
+                        <p class="text-lg text-gray-600">We combine deep technical expertise with practical business acumen to deliver solutions that work.</p>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Approach</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-comments text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Consultation First</h3>
+                            <p class="text-gray-600">We begin by understanding your unique needs and challenges</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-cogs text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Custom Solutions</h3>
+                            <p class="text-gray-600">Every implementation is tailored to your specific requirements</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-shield-alt text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Best Practices</h3>
+                            <p class="text-gray-600">We follow industry standards and proven methodologies</p>
+                        </div>
+                        <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-graduation-cap text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Knowledge Transfer</h3>
+                            <p class="text-gray-600">We ensure your team is equipped to maintain and optimize solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Our Values</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-star text-2xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Excellence</h3>
+                            <p class="text-gray-600">We strive for technical excellence in every project</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-handshake text-2xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Integrity</h3>
+                            <p class="text-gray-600">We maintain the highest standards of professional conduct</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-lightbulb text-2xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Innovation</h3>
+                            <p class="text-gray-600">We stay at the forefront of cloud technology</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-users text-2xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Partnership</h3>
+                            <p class="text-gray-600">We build long-term relationships with our clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-8">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Meet the Team</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Cloud Architecture</h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-server text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Systems Engineering</h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-network-wired text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Network Infrastructure</h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-database text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Storage Solutions</h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-code-branch text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">DevOps Practices</h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-shield-alt text-3xl text-primary-600 mb-4"></i>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Security</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-primary-600 text-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Get Started?</h2>
+                <p class="text-xl text-primary-100 mb-8">Contact us to learn more about how we can help with your cloud infrastructure needs.</p>
+                <a href="/contact" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-primary-700 bg-white hover:bg-gray-50 transition-colors">
+                    Contact Us Today
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+    {{ else if eq .Params.layout "contact" }}
+        <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{{ .Title }}</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">Ready to transform your cloud infrastructure? We're here to help.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-8">Get in Touch</h2>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-xl text-primary-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Email</h3>
+                                    <a href="mailto:info@cloudwranglers.io" class="text-primary-600 hover:text-primary-700">info@cloudwranglers.io</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-xl text-primary-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Phone</h3>
+                                    <a href="tel:+14802341417" class="text-primary-600 hover:text-primary-700">480-234-1417</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-xl text-primary-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Office Hours</h3>
+                                    <p class="text-gray-600">Monday - Friday, 9:00 AM - 5:00 PM MST</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-xl text-primary-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-gray-900">Location</h3>
+                                    <p class="text-gray-600">Phoenix, Arizona 85021</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-12 p-6 bg-gray-50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Prefer to Schedule a Meeting?</h3>
+                            <p class="text-gray-600 mb-4">Looking to discuss your cloud infrastructure needs in detail?</p>
+                            <a href="/calendar" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium">
+                                Schedule a consultation
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white border border-gray-200 rounded-lg p-8 shadow-sm">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                        <form action="https://formspree.io/f/info@cloudwranglers.io" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="company" class="block text-sm font-medium text-gray-700 mb-2">Company</label>
+                                <input type="text" id="company" name="company" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="5" required class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary-600 text-white px-6 py-3 rounded-md font-medium hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 transition-colors">
+                                Send Message
+                                <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {{ else if eq .Params.layout "calendar" }}
+        <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{{ .Title }}</h1>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ .Params.description }}</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Choose Your Meeting Type</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="meeting-type-card bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer hover:border-primary-300" 
+                             data-calendly-url="https://calendly.com/jalford00/initial-consultation" 
+                             data-meeting-type="Initial Consultation">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-comments text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Initial Consultation</h3>
+                            <p class="text-sm text-primary-600 font-medium mb-3">30 minutes • Free</p>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Overview of your infrastructure needs
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Initial assessment and recommendations
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    High-level planning discussion
+                                </li>
+                            </ul>
+                            <button class="w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors">
+                                Schedule Now
+                            </button>
+                        </div>
+
+                        <div class="meeting-type-card bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer hover:border-primary-300" 
+                             data-calendly-url="https://calendly.com/jalford00/technical-deep-dive" 
+                             data-meeting-type="Technical Deep Dive">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-search text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Technical Deep Dive</h3>
+                            <p class="text-sm text-primary-600 font-medium mb-3">60 minutes</p>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Detailed technical requirements
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Architecture design review
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Performance optimization strategies
+                                </li>
+                            </ul>
+                            <button class="w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors">
+                                Schedule Now
+                            </button>
+                        </div>
+
+                        <div class="meeting-type-card bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer hover:border-primary-300" 
+                             data-calendly-url="https://calendly.com/jalford00/project-planning" 
+                             data-meeting-type="Project Planning">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-project-diagram text-xl text-primary-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Project Planning</h3>
+                            <p class="text-sm text-primary-600 font-medium mb-3">60 minutes</p>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Project scope definition
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Timeline and milestone planning
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-primary-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Risk assessment
+                                </li>
+                            </ul>
+                            <button class="w-full bg-primary-600 text-white py-2 px-4 rounded-md hover:bg-primary-700 transition-colors">
+                                Schedule Now
+                            </button>
+                        </div>
+
+                        <div class="meeting-type-card bg-white border border-red-100 rounded-lg p-6 shadow-sm hover:shadow-md transition-all cursor-pointer hover:border-red-300" 
+                             data-calendly-url="https://calendly.com/jalford00/emergency-support" 
+                             data-meeting-type="Emergency Support">
+                            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                                <i class="fas fa-exclamation-triangle text-xl text-red-600"></i>
+                            </div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-2">Emergency Support</h3>
+                            <p class="text-sm text-red-600 font-medium mb-3">60 minutes • Urgent</p>
+                            <ul class="text-sm text-gray-600 space-y-2 mb-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Critical infrastructure issues
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Immediate technical assistance
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-red-500 mt-1 mr-2 flex-shrink-0 text-xs"></i>
+                                    Quick resolution planning
+                                </li>
+                            </ul>
+                            <button class="w-full bg-red-600 text-white py-2 px-4 rounded-md hover:bg-red-700 transition-colors">
+                                Schedule Now
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <p class="text-gray-600 mb-4">Click on any meeting type above to schedule your appointment</p>
+                        <div class="inline-flex items-center text-sm text-gray-500">
+                            <i class="fas fa-info-circle mr-2"></i>
+                            All meetings are conducted via video conference
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                    <div class="lg:col-span-2">
+                        <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                            <div class="p-6 bg-gray-50 border-b border-gray-200">
+                                <h2 class="text-2xl font-bold text-gray-900 mb-2">Schedule Your Meeting</h2>
+                                <p class="text-gray-600 mb-4">Select a meeting type above to schedule your appointment</p>
+                                <div id="selected-meeting-info" class="hidden">
+                                    <div class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-primary-100 text-primary-800">
+                                        <i class="fas fa-calendar-check mr-2"></i>
+                                        <span id="selected-meeting-name"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div id="calendly-container">
+                                    <div id="no-selection" class="text-center py-16">
+                                        <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <i class="fas fa-calendar-alt text-2xl text-gray-400"></i>
+                                        </div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Choose a Meeting Type</h3>
+                                        <p class="text-gray-600">Please select one of the meeting types above to view available time slots</p>
+                                    </div>
+                                    <div id="calendly-widget" class="hidden">
+                                        <div class="calendly-inline-widget" style="min-width:320px;height:700px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-primary-50 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Scheduling Process</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">1</div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900">Select Meeting Type</h4>
+                                        <p class="text-sm text-gray-600">Choose the consultation that best fits your needs</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">2</div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900">Choose Time Slot</h4>
+                                        <p class="text-sm text-gray-600">Pick an available time that works for you</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">3</div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900">Provide Information</h4>
+                                        <p class="text-sm text-gray-600">Share your contact details and requirements</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">4</div>
+                                    <div>
+                                        <h4 class="font-medium text-gray-900">Get Confirmation</h4>
+                                        <p class="text-sm text-gray-600">Receive meeting details via email</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Meeting Details</h3>
+                            <ul class="space-y-3 text-sm text-gray-600">
+                                <li class="flex items-center">
+                                    <i class="fas fa-video text-primary-600 mr-3"></i>
+                                    All meetings conducted via video conference
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-envelope text-primary-600 mr-3"></i>
+                                    Meeting links sent upon confirmation
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-clock text-primary-600 mr-3"></i>
+                                    Available Monday - Friday, 9:00 AM - 5:00 PM MST
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-redo text-primary-600 mr-3"></i>
+                                    Easy rescheduling if needed
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white border border-gray-200 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-900 mb-4">Need Help?</h3>
+                            <p class="text-sm text-gray-600 mb-4">Having trouble scheduling or have questions about our services?</p>
+                            <a href="/contact" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm">
+                                Contact us directly
+                                <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const meetingTypeCards = document.querySelectorAll('.meeting-type-card');
+                const noSelection = document.getElementById('no-selection');
+                const calendlyWidget = document.getElementById('calendly-widget');
+                const selectedMeetingInfo = document.getElementById('selected-meeting-info');
+                const selectedMeetingName = document.getElementById('selected-meeting-name');
+                const calendlyInlineWidget = document.querySelector('.calendly-inline-widget');
+                
+                let currentCalendlyUrl = '';
+
+                meetingTypeCards.forEach(card => {
+                    // Add click event to the entire card
+                    card.addEventListener('click', function() {
+                        const calendlyUrl = this.getAttribute('data-calendly-url');
+                        const meetingType = this.getAttribute('data-meeting-type');
+                        
+                        // Remove active state from all cards
+                        meetingTypeCards.forEach(c => {
+                            c.classList.remove('ring-2', 'ring-primary-500', 'border-primary-500');
+                            c.classList.add('border-gray-200');
+                        });
+                        
+                        // Add active state to selected card
+                        this.classList.remove('border-gray-200');
+                        this.classList.add('ring-2', 'ring-primary-500', 'border-primary-500');
+                        
+                        // Update the meeting info display
+                        selectedMeetingName.textContent = meetingType;
+                        selectedMeetingInfo.classList.remove('hidden');
+                        
+                        // Hide no-selection message and show widget
+                        noSelection.classList.add('hidden');
+                        calendlyWidget.classList.remove('hidden');
+                        
+                        // Update Calendly widget URL if it has changed
+                        if (currentCalendlyUrl !== calendlyUrl) {
+                            currentCalendlyUrl = calendlyUrl;
+                            calendlyInlineWidget.setAttribute('data-url', calendlyUrl);
+                            
+                            // Reinitialize Calendly widget
+                            if (window.Calendly) {
+                                // Clear the existing widget
+                                calendlyInlineWidget.innerHTML = '';
+                                
+                                // Initialize new widget
+                                window.Calendly.initInlineWidget({
+                                    url: calendlyUrl,
+                                    parentElement: calendlyInlineWidget,
+                                    prefill: {},
+                                    utm: {}
+                                });
+                            }
+                        }
+                        
+                        // Smooth scroll to calendar section
+                        calendlyWidget.scrollIntoView({ 
+                            behavior: 'smooth', 
+                            block: 'start' 
+                        });
+                    });
+
+                    // Add click event to the button specifically for better UX
+                    const button = card.querySelector('button');
+                    if (button) {
+                        button.addEventListener('click', function(e) {
+                            e.stopPropagation(); // Prevent double-firing
+                            card.click();
+                        });
+                    }
+                });
+
+                // Function to handle Calendly widget loading
+                function initializeCalendlyWidget() {
+                    if (window.Calendly && currentCalendlyUrl) {
+                        window.Calendly.initInlineWidget({
+                            url: currentCalendlyUrl,
+                            parentElement: calendlyInlineWidget,
+                            prefill: {},
+                            utm: {}
+                        });
+                    }
+                }
+
+                // Retry Calendly initialization if not loaded yet
+                let retryCount = 0;
+                const maxRetries = 10;
+                const retryInterval = setInterval(() => {
+                    if (window.Calendly || retryCount >= maxRetries) {
+                        clearInterval(retryInterval);
+                        if (window.Calendly && currentCalendlyUrl) {
+                            initializeCalendlyWidget();
+                        }
+                    }
+                    retryCount++;
+                }, 500);
+            });
+        </script>
+
+    {{ else }}
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <article class="prose prose-lg max-w-none">
+                <h1 class="text-4xl font-bold text-gray-900 mb-8">{{ .Title }}</h1>
+                {{ .Content }}
+            </article>
+        </div>
+    {{ end }}
 {{ end }} 

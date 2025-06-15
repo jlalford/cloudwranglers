@@ -1,6 +1,7 @@
 ---
 title: "Contact Cloud Wranglers"
 description: "Get in touch with our team for cloud infrastructure consulting and support"
+layout: "contact"
 draft: false
 ---
 

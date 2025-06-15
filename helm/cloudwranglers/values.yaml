@@ -1,4 +1,4 @@
-replicaCount: 1
+replicaCount: 2
 
 namespace: cloudwranglers-site
 
@@ -18,15 +18,46 @@ serviceAccount:
 
 podAnnotations: {}
 
-podSecurityContext: {}
+podSecurityContext:
+  runAsNonRoot: true
+  runAsUser: 101
+  runAsGroup: 101
+  fsGroup: 101
 
-securityContext: {}
+securityContext:
+  allowPrivilegeEscalation: false
+  readOnlyRootFilesystem: false
+  runAsNonRoot: true
+  runAsUser: 101
+  capabilities:
+    drop:
+    - ALL
 
 service:
-  type: NodePort
-  port: 8080
+  # Primary service for internal cluster communication
+  type: ClusterIP
+  port: 80
   targetPort: 8080
-  nodePort: 31315
+
+# LoadBalancer service for external access (alternative to ingress)
+loadBalancer:
+  enabled: true
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
+  # Optional: specify LoadBalancer IP (cloud provider dependent)
+  # loadBalancerIP: ""
+  # Optional: specify allowed source ranges
+  # loadBalancerSourceRanges: []
+  annotations:
+    # Cloud provider specific annotations
+    # AWS example:
+    # service.beta.kubernetes.io/aws-load-balancer-type: "nlb"
+    # service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+    # GCP example:
+    # cloud.google.com/load-balancer-type: "External"
+    # Azure example:
+    # service.beta.kubernetes.io/azure-load-balancer-resource-group: "myResourceGroup"
 
 ingress:
   enabled: true
@@ -36,12 +67,41 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+    - host: "www.cloudwranglers.io"
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    enabled: true
+    secretName: cloudwranglers-tls
   annotations:
+    # Basic ingress configuration
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
 
+    # SSL/TLS configuration
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/hsts: "true"
+    nginx.ingress.kubernetes.io/hsts-max-age: "31536000"
+    nginx.ingress.kubernetes.io/hsts-include-subdomains: "true"
+
+    # Cert-manager for automatic SSL certificates
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+
+    # External access optimizations
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/proxy-connect-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "300"
+
+    # Rate limiting for external access
+    nginx.ingress.kubernetes.io/rate-limit: "100"
+    nginx.ingress.kubernetes.io/rate-limit-window: "1m"
+
 certManager:
   email: hello@cloudwranglers.io
+  enabled: true
   staging: false
 
 resources:
@@ -57,9 +117,47 @@ autoscaling:
   minReplicas: 2
   maxReplicas: 5
   targetCPUUtilizationPercentage: 80
+  targetMemoryUtilizationPercentage: 80
+
+# Network Policy for security (optional)
+networkPolicy:
+  enabled: true
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    # Allow ingress from nginx-ingress controller
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              name: ingress-nginx
+        - podSelector:
+            matchLabels:
+              app.kubernetes.io/name: ingress-nginx
+      ports:
+        - protocol: TCP
+          port: 8080
+    # Allow ingress from LoadBalancer (if enabled)
+    - from: []
+      ports:
+        - protocol: TCP
+          port: 8080
+  egress:
+    # Allow DNS resolution
+    - to: []
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+    # Allow outbound HTTPS for external services
+    - to: []
+      ports:
+        - protocol: TCP
+          port: 443
 
 nodeSelector: {}
 
 tolerations: []
 
-affinity: {} 
+affinity: {}

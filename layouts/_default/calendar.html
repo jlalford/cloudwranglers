@@ -1,95 +1,151 @@
 {{ define "main" }}
-    <section class="section">
-        <div class="section-content">
-            <div class="hero-image" style="background-image: url('/images/calendar-hero.jpg');">
-                <div class="hero-overlay">
-                    <h1>{{ .Title }}</h1>
-                </div>
-            </div>
-            
-            <div class="content-wrapper">
-                {{ .Content }}
+    <section class="py-16 lg:py-24 bg-gradient-to-br from-primary-50 to-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{{ .Title }}</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Book a consultation with our cloud infrastructure experts to discuss your needs.</p>
             </div>
         </div>
     </section>
 
-    <style>
-        .section {
-            background: #1a1a1a;
-            color: #ffffff;
-            min-height: 100vh;
-        }
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-16">
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-comments text-xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Initial Consultation</h3>
+                    <p class="text-sm text-gray-600 mb-3">30 minutes</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Infrastructure needs overview</li>
+                        <li>Initial assessment</li>
+                        <li>High-level planning</li>
+                    </ul>
+                </div>
 
-        .section-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-search text-xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Technical Deep Dive</h3>
+                    <p class="text-sm text-gray-600 mb-3">60 minutes</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Detailed requirements</li>
+                        <li>Architecture review</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
 
-        .hero-image {
-            height: 300px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-        }
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-project-diagram text-xl text-primary-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Project Planning</h3>
+                    <p class="text-sm text-gray-600 mb-3">60 minutes</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Scope definition</li>
+                        <li>Timeline planning</li>
+                        <li>Risk assessment</li>
+                    </ul>
+                </div>
 
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-        }
+                <div class="bg-white border border-gray-200 rounded-lg p-6 shadow-sm text-center">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-exclamation-triangle text-xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Emergency Support</h3>
+                    <p class="text-sm text-gray-600 mb-3">60 minutes</p>
+                    <ul class="text-sm text-gray-500 space-y-1">
+                        <li>Critical infrastructure issues</li>
+                        <li>Immediate assistance</li>
+                        <li>Quick resolution planning</li>
+                    </ul>
+                </div>
+            </div>
 
-        .hero-overlay h1 {
-            color: #ffffff;
-            font-size: 2.5rem;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
+                        <div class="p-6 bg-gray-50 border-b border-gray-200">
+                            <h2 class="text-2xl font-bold text-gray-900 mb-2">Schedule Your Meeting</h2>
+                            <p class="text-gray-600">Select your preferred meeting type and choose an available time slot</p>
+                        </div>
+                        <div class="p-6">
+                            <div class="calendly-inline-widget" data-url="https://calendly.com/jalford00" style="min-width:320px;height:700px;"></div>
+                        </div>
+                    </div>
+                </div>
 
-        .content-wrapper {
-            background: #2a2a2a;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+                <div class="space-y-6">
+                    <div class="bg-primary-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Scheduling Process</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">1</div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Select Meeting Type</h4>
+                                    <p class="text-sm text-gray-600">Choose the consultation that best fits your needs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">2</div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Choose Time Slot</h4>
+                                    <p class="text-sm text-gray-600">Pick an available time that works for you</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">3</div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Provide Information</h4>
+                                    <p class="text-sm text-gray-600">Share your contact details and requirements</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-6 h-6 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-medium mr-3 mt-0.5">4</div>
+                                <div>
+                                    <h4 class="font-medium text-gray-900">Get Confirmation</h4>
+                                    <p class="text-sm text-gray-600">Receive meeting details via email</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-        .calendly-container {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 2rem;
-            background: #333333;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Meeting Details</h3>
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li class="flex items-center">
+                                <i class="fas fa-video text-primary-600 mr-3"></i>
+                                All meetings conducted via video conference
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-primary-600 mr-3"></i>
+                                Meeting links sent upon confirmation
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-clock text-primary-600 mr-3"></i>
+                                Available Monday - Friday, 9:00 AM - 5:00 PM MST
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-redo text-primary-600 mr-3"></i>
+                                Easy rescheduling if needed
+                            </li>
+                        </ul>
+                    </div>
 
-        .calendly-inline-widget {
-            min-width: 320px;
-            height: 700px;
-            margin: 0 auto;
-        }
+                    <div class="bg-white border border-gray-200 rounded-lg p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Need Help?</h3>
+                        <p class="text-sm text-gray-600 mb-4">Having trouble scheduling or have questions about our services?</p>
+                        <a href="/contact" class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm">
+                            Contact us directly
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        @media (max-width: 768px) {
-            .calendly-container {
-                padding: 1rem;
-                margin: 1rem;
-            }
-            
-            .hero-image {
-                height: 200px;
-            }
-            
-            .hero-overlay h1 {
-                font-size: 2rem;
-            }
-        }
-    </style>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 {{ end }} 
