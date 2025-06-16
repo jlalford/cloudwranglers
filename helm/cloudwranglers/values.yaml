@@ -78,30 +78,30 @@ ingress:
     # Basic ingress configuration
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/proxy-body-size: "0"
-    
+
     # SSL/TLS configuration
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     nginx.ingress.kubernetes.io/hsts: "true"
     nginx.ingress.kubernetes.io/hsts-max-age: "31536000"
     nginx.ingress.kubernetes.io/hsts-include-subdomains: "true"
-    
+
     # Cert-manager for automatic SSL certificates
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
-    
+
     # External access optimizations
     nginx.ingress.kubernetes.io/use-regex: "true"
     nginx.ingress.kubernetes.io/proxy-connect-timeout: "300"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "300"
-    
+
     # Rate limiting for external access
     nginx.ingress.kubernetes.io/rate-limit: "100"
     nginx.ingress.kubernetes.io/rate-limit-window: "1m"
 
 certManager:
+  email: hello@cloudwranglers.io
   enabled: true
-  email: info@cloudwranglers.io
   staging: false
 
 resources:
@@ -160,4 +160,4 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {} 
+affinity: {}

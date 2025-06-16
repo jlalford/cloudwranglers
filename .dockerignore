@@ -1,0 +1,101 @@
+# Ignore files and directories that are not required for the container build
+# Keep the compiled site (public/) so the image can serve it
+
+# Version control
+.git
+.gitmodules
+.github
+
+# Helm charts and Kubernetes configs
+helm/
+*.kubeconfig
+*.kubeconfig.yaml
+*.kubeconfig.yml
+kubeconfig
+kubeconfig.yaml
+kubeconfig.yml
+
+# Hugo source directories not needed in the final image
+archetypes/
+content/
+layouts/
+static/
+resources/_gen/
+assets/jsconfig.json
+.hugo_build.lock
+
+# Docker and development files
+.docker/
+docker-compose.override.yml
+*.log
+
+# Development environment artifacts
+.idea/
+.vscode/
+.env
+.env.local
+.env.*.local
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Build artifacts
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Node specific
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+
+# Go specific
+*.exe
+*.exe~
+*.dll
+*.dylib
+*.test
+*.out
+go.work
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing artifacts
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.patch
