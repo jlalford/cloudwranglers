@@ -25,11 +25,17 @@ RUN /root/go/bin/hugo --minify
 # Serve stage
 FROM nginx:1.25-alpine
 
+# Install python for contact form handler
+RUN apk add --no-cache python3
+
 # Copy the built site from the builder stage
 COPY --from=builder /src/public /usr/share/nginx/html
 
 # Copy custom nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Copy contact form server
+COPY app /app
 
 # Set proper permissions
 RUN chmod -R 755 /usr/share/nginx/html
@@ -37,5 +43,5 @@ RUN chmod -R 755 /usr/share/nginx/html
 # Expose port 8080
 EXPOSE 8080
 
-# Start Nginx
-CMD ["nginx", "-g", "daemon off;"] 
+# Start the contact form handler and Nginx
+CMD ["sh", "-c", "python3 /app/contact_server.py & nginx -g 'daemon off;'"]
