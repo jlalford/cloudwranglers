@@ -18,7 +18,7 @@ Ready to transform your cloud infrastructure? We're here to help.
 
 ## Send Us a Message
 
-<form action="https://formspree.io/f/hello@cloudwranglers.io" method="POST">
+<form action="/contact" method="POST">
   <div class="form-group">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" required>
